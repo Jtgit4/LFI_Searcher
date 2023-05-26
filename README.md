@@ -5,11 +5,14 @@ The count of directories searched is defined in the code, this script will then 
 
 
 **Explination of adjustable arguments**
+
 There are 3 adjustable arguments in this script, they are:
 
-{NUMBER..NUMBER} - This tells the script the range of ../ to attempt, for example if the argument is set as {1..10} then a total of 10 ../ will be used
-url="[{TARGET URL}]" - This is the target url we are looking for E.g. a **passwd** file
-{PARAMETER} - This is the parameters to fuzz, such as a page=/
+**{NUMBER..NUMBER}** - This tells the script the range of ../ to attempt, for example if the argument is set as {1..10} then a total of 10 ../ will be used
+
+**url="[{TARGET URL}]"** - This is the target url we are looking for E.g. a **passwd** file\n
+
+**{PARAMETER}** - This is the parameters to fuzz, such as a page=/
 
 **Useage Example**
 
