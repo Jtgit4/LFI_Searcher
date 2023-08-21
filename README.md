@@ -24,5 +24,3 @@ Options:
   -h, --help      display help text
 ```
 
-https://github.com/Jtgit4/LFI_Searcher/assets/125322633/459ad897-7433-4753-8cad-890f03b95aea
-
